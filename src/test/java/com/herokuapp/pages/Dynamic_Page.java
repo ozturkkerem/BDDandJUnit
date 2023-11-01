@@ -1,5 +1,6 @@
 package com.herokuapp.pages;
 
+import com.herokuapp.utilities.CommonMethods;
 import com.herokuapp.utilities.Driver;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
@@ -23,7 +24,7 @@ public class Dynamic_Page {
     }
 
     public void checkItIsGoneMessage(){
-
+        CommonMethods.clickElementExpWait(itIsGoneMessage);
         Assert.assertTrue(itIsGoneMessage.isDisplayed());
 
     }
